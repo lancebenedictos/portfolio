@@ -4,22 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* #FFCB02
-#A28E65
-#FFF9EE
-#DFE0DF */
-
-/* body::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   overflow-x: hidden;
 }
-*/ path {
+path {
   stroke-width: 3;
 }
 
