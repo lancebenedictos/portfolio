@@ -46,6 +46,7 @@ function LevelIndicator({
       <motion.div
         className="relative "
         // whileInView="show"
+        // @ts-ignore
         whileInView={() => setInView(true)}
       >
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
