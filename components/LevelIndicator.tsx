@@ -46,11 +46,11 @@ function LevelIndicator({
       <motion.div
         className="relative "
         // whileInView="show"
-        whileInView={() => {
-          // when element in viewport , set IsInView true!
-          setInView(true);
-        }}
+        whileInView={() => setInView(true)}
       >
+        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          {percents}%
+        </p>
         <svg
           viewBox="0 0 100 100"
           version="1.1"

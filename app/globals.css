@@ -9,7 +9,7 @@
 #FFF9EE
 #DFE0DF */
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
 }
 
@@ -17,9 +17,9 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  overflow-x: hidden;
 }
-
-path {
+*/ path {
   stroke-width: 3;
 }
 
@@ -30,7 +30,8 @@ h3,
   font-family: "Lexend Mega", sans-serif;
 }
 p,
-a {
+a,
+label {
   font-family: "Public Sans", sans-serif;
 }
 
@@ -39,7 +40,6 @@ html {
 }
 
 img {
-  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -49,7 +49,7 @@ img {
 
 section,
 header {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 50px;
   scroll-snap-stop: always;
   scroll-snap-align: start;

@@ -5,7 +5,7 @@ import LevelIndicator from "./LevelIndicator";
 function About() {
   return (
     <section className="bg-[#FF00F5] flex flex-col">
-      <div className="w-[80%] mx-auto text-[#FCFD96] grid grid-cols-2 gap-6 items-center h-full">
+      <div className="w-[80%] mx-auto text-[#FCFD96] grid grid-cols-2 gap-6 items-center flex-1">
         <div className="w-full flex flex-col gap-4">
           <span>
             <h2 className=" text-3xl">About me</h2>
