@@ -1,27 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@700&family=Public+Sans:wght@500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* #FFCB02
+#A28E65
+#FFF9EE
+#DFE0DF */
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Hide scrollbar for IE, Edge and Firefox */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+path {
+  stroke-width: 3;
+}
+
+h1,
+h2,
+h3,
+.banner {
+  font-family: "Lexend Mega", sans-serif;
+}
+p,
+a {
+  font-family: "Public Sans", sans-serif;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+section,
+header {
+  height: 100vh;
+  padding-top: 50px;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
+}
+
+.multiple-shadow {
+  text-shadow: -10px 10px 0px #00e6e6, -20px 20px 0px #01cccc,
+    -30px 30px 0px #00bdbd;
+}
+
+textPath {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.border {
+  box-shadow: rgb(0, 0, 0) 15px 15px 0px -3px;
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" enable-background="new 0 0 64 64" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path fill="none" d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z" stroke="#323232" stroke-width="2"/>
+
+<!-- Path 3 -->
+<path d="M15.197,8.887c-0.283,0-0.572-0.002-0.857-0.005c-0.283-0.002-0.566-0.005-0.838-0.005c-0.236,0-0.426-0.191-0.426-0.426   s0.19-0.426,0.426-0.426c0.272,0,0.555,0.003,0.837,0.005c0.568,0.003,1.145,0.007,1.672-0.005   c0.002,0,0.004,0,0.006,0c0.214,0,0.388,0.172,0.392,0.386c0.003,0.214-0.166,0.392-0.38,0.397   C15.616,8.884,15.412,8.887,15.197,8.887z"
+   style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
+
+<!-- Path 4 -->
+<path d="M13.543,12.383c-1.281,0-2.595-0.001-3.573-0.002l-1.083-0.001c-0.214,0-0.387-0.173-0.388-0.387   c0-0.214,0.173-0.387,0.387-0.388l1.085,0.001c2.288,0.003,6.538,0.009,7.56-0.014c0.215,0.004,0.388,0.166,0.392,0.381   c0.003,0.213-0.167,0.388-0.38,0.392C16.08,12.38,14.839,12.383,13.543,12.383z"
+   style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
+
+</svg>
