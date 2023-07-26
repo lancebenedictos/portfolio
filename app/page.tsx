@@ -15,8 +15,6 @@ export default function Home() {
         <ProjectSection />
         <ContactUs />
       </main>
-
-      <Cursor />
     </>
   );
 }
