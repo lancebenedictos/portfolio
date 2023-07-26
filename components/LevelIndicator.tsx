@@ -10,11 +10,30 @@ type Props = {
   content: string;
 };
 
+const images = {
+  TypeScript:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  HTML5:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  CSS3: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  JavaScript:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  React:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  NextJS:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  NodeJS:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  SQL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  MongoDB:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  Git: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+};
+
 function LevelIndicator({
   percents,
   content,
   emptyStrokeOpacity,
-
   strokeWidth,
 }: Props) {
   const [inView, setInView] = useState(false);
@@ -49,9 +68,10 @@ function LevelIndicator({
         // @ts-ignore
         whileInView={() => setInView(true)}
       >
-        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          {percents}%
-        </p>
+        <img
+          src={images[content]}
+          className="rounded-full absolute w-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        />
         <svg
           viewBox="0 0 100 100"
           version="1.1"

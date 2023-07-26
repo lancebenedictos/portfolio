@@ -48,7 +48,7 @@ const animations = {
 
 function HeroText() {
   return (
-    <div className="relative">
+    <div className="relative mb-16">
       <Image
         src="./code.svg"
         width={60}

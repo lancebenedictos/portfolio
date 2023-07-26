@@ -35,7 +35,7 @@ const projects: Array<Project> = [
   },
   {
     svg: <Computer />,
-    tech: "TailwindCSS, NextJS, Framer Motion",
+    tech: "TailwindCSS, NextJS, Framer Motion, Grafbase",
     projectImgSrc: "/flexxible.png",
     projectUrl: "https://flexibble-wheat.vercel.app/",
     title: "03. Dribbble clone",

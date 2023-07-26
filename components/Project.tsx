@@ -44,11 +44,15 @@ function Project({
           {svg}
           <h1 className="text-2xl">{title}</h1>
         </div>
-        <div className="bg-red-200 px-2 py-3 mx-2 rounded-lg">
-          <p>{tech}</p>
+        <div className="bg-red-100 px-2 py-3 mx-2 rounded-lg">
+          <p className="fontBold">{tech}</p>
 
           <div className="flex gap-2 mt-4">
-            <a href={githubUrl} target="_blank">
+            <a
+              href={githubUrl}
+              target="_blank"
+              className="hover:rotate-6 transition-all"
+            >
               <Image
                 src="/github.svg"
                 width={30}
@@ -56,7 +60,11 @@ function Project({
                 alt="github url"
               />
             </a>
-            <a href={projectUrl} target="_blank">
+            <a
+              href={projectUrl}
+              target="_blank"
+              className="hover:rotate-6 transition-all"
+            >
               <Image src="/live.svg" width={30} height={30} alt="live site" />
             </a>
           </div>

@@ -8,19 +8,23 @@ function About() {
       <div className="w-[80%] mx-auto text-[#FCFD96] flex flex-col lg:grid lg:grid-cols-2 gap-6 items-center flex-1">
         <div className="w-full flex flex-col gap-4">
           <span>
-            <h2 className=" text-3xl">About me</h2>
-            <p>
+            <h2 className="textShadow text-3xl">About me</h2>
+            <p className="textShadow">
               I am a college student in Ontario, studying computer programming.
               As a developer I like creating visually pleasing websites with
               amazing interactions
             </p>
           </span>
           <span>
-            <h2 className=" text-xl">Awards</h2>
-            <a href="https://www.senecahackathon.com/history" target="_blank">
+            <h2 className=" text-xl textShadow">Awards</h2>
+            <a
+              href="https://www.senecahackathon.com/history"
+              target="_blank"
+              className=" fontBold textShadow underline underline-offset-2 hover:underline-offset-4 transition-all"
+            >
               Seneca Smart Cities Hackathon
             </a>
-            <p>Runner up | Category winner</p>
+            <p className="textShadow">Runner up | Category winner</p>
           </span>
         </div>
 
@@ -39,7 +43,7 @@ function About() {
               counter={true}
               emptyStrokeOpacity={1}
               strokeWidth={8}
-              content="Typescript"
+              content="TypeScript"
             />
             <LevelIndicator
               percents={95}
@@ -81,7 +85,7 @@ function About() {
               counter={true}
               emptyStrokeOpacity={1}
               strokeWidth={8}
-              content="Node JS"
+              content="NodeJS"
             />
             <LevelIndicator
               percents={90}

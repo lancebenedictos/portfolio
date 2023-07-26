@@ -3,6 +3,7 @@ import React from "react";
 import MouseIcon from "./MouseIcon";
 import HeroText from "./HeroText";
 import HeroBottom from "./HeroBottom";
+import ContactDeck from "./ContactDeck";
 
 function Hero() {
   return (
@@ -17,37 +18,7 @@ function Hero() {
           </h3>
           <HeroText />
 
-          <div className="flex gap-2 mt-16 lg:justify-center">
-            <a
-              className="flex items-center gap-2"
-              href="https://github.com/lancebenedictos"
-              target="_blank"
-            >
-              <Image src="./github.svg" width={40} height={40} alt="github" />
-              GitHub
-            </a>
-            <a
-              className="flex items-center gap-2"
-              href="https://www.linkedin.com/in/lance-justine-benedictos-9800b11b5"
-              target="_blank"
-            >
-              <Image
-                src="./linkedin.svg"
-                width={40}
-                height={40}
-                alt="linkedin"
-              />
-              LinkedIn
-            </a>
-            <a
-              href="./res.pdf"
-              target="_blank"
-              className="flex items-center gap-2"
-            >
-              <Image src="./cv.svg" width={40} height={40} alt="cv" />
-              CV
-            </a>
-          </div>
+          <ContactDeck />
         </div>
 
         <div className=" hidden md:block relative  lg:h-full">

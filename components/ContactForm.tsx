@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import ContactDeck from "./ContactDeck";
 
 export const ContactUs = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -39,27 +40,38 @@ export const ContactUs = () => {
       id="contact"
     >
       <h1 className="mb-4 text-2xl">Say hello!</h1>
+
+      <ContactDeck />
       <form
         ref={form}
         onSubmit={sendEmail}
         className="flex flex-col w-[80%] lg:w-[400px] p-4  bg-white border"
       >
-        <label className="mt-4">Name</label>
+        <label className="mt-4" htmlFor="user_name">
+          Name
+        </label>
         <input
           type="text"
           name="user_name"
+          id="user_name"
           className="border-2 border-black p-2"
         />
-        <label className="mt-4">Email</label>
+        <label className="mt-4" htmlFor="user_email">
+          Email
+        </label>
         <input
           type="email"
           name="user_email"
+          id="user_email"
           required
           className="border-2 border-black p-2"
         />
-        <label className="mt-4">Message</label>
+        <label className="mt-4" htmlFor="message">
+          Message
+        </label>
         <textarea
           name="message"
+          id="message"
           required
           className="border-2 border-black p-2"
         />
