@@ -9,12 +9,13 @@ function SkillsSection() {
     <motion.div whileInView="show" viewport={{ once: true }}>
       <motion.div
         className="border w-full bg-[#FCFD96] rounded-lg text-[#FF00F5] p-4 relative overflow-visible mt-16 md:mt-0"
-        initial={{ x: "250%", rotateZ: 45 }}
+        initial={{ rotateZ: 45, opacity: 0 }}
         variants={{
           show: {
-            x: 0,
+            // x: 0,
+            opacity: 1,
             rotateZ: 0,
-            transition: { duration: 1.3, ease: "backInOut" },
+            transition: { duration: 0.4, ease: "backInOut" },
           },
         }}
       >
