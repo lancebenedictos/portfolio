@@ -42,6 +42,9 @@ function LevelIndicator({
   const fillPercents = Math.abs(
     Math.ceil((circumference / 100) * (percents - 100))
   );
+
+  //@ts-ignore
+  const image = images[content];
   const transition = {
     duration: 1,
     ease: "easeIn",
@@ -69,7 +72,7 @@ function LevelIndicator({
         whileInView={() => setInView(true)}
       >
         <img
-          src={images[content]}
+          src={image}
           className="rounded-full absolute w-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
         <svg
