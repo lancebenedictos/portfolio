@@ -12,10 +12,10 @@ function Camera() {
   return (
     <motion.svg
       fill="none"
-      className="w-[130px] p-4 stroke-red-300  "
+      className="w-[130px] p-4 stroke-red-300"
       version="1.1"
       id="Capa_1"
-      strokeWidth={8}
+      strokeWidth={20}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 500"
       whileInView="show"
