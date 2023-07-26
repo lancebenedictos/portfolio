@@ -55,7 +55,7 @@ function ProjectSection() {
       <div className=" -z-10 absolute bottom-1/3 left-1/3  translate-x-1/2 border-2 rounded-full border-black p-2 ">
         <div className="w-[150px] h-[150px] rounded-full bg-[#7DF9FF]"></div>
       </div>
-      <div className="w-full px-4 lg:w-[80%] mx-auto lg:pt-[54px] flex flex-col gap-4">
+      <div className="w-full px-4 lg:w-[80%] max-w-6xl mx-auto lg:pt-[54px] flex flex-col gap-4">
         {projects.map(
           (
             {

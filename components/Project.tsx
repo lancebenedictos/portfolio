@@ -37,7 +37,7 @@ function Project({
     <motion.div
       className={`w-full flex flex-col ${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } justify-center`}
+      } justify-between`}
     >
       <div className="w-full lg:w-[40%]">
         <div className="flex items-center">
@@ -71,7 +71,7 @@ function Project({
         </div>
       </div>
 
-      <div className="mt-6 lg:mt-0 lg:w-[60%]">
+      <div className="mt-6 lg:mt-0 lg:w-[60%] max-w-[500px]">
         <motion.a
           whileInView="expand"
           href={projectUrl}
