@@ -17,7 +17,7 @@ function Hero() {
           </h3>
           <HeroText />
 
-          <div className="flex gap-2 mt-16 justify-center">
+          <div className="flex gap-2 mt-16 lg:justify-center">
             <a
               className="flex items-center gap-2"
               href="https://github.com/lancebenedictos"
