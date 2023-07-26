@@ -8,7 +8,7 @@ function SkillsSection() {
   return (
     <motion.div whileInView="show" viewport={{ once: true }}>
       <motion.div
-        className="border w-full bg-[#FCFD96] rounded-lg text-[#FF00F5] p-4 relative overflow-visible mt-16 md:mt-0"
+        className="border w-full bg-[#FCFD96] rounded-lg text-[#FF00F5] p-4 relative mt-16 md:mt-0 overflow-hidden"
         initial={{ rotateZ: 45, opacity: 0 }}
         variants={{
           show: {
