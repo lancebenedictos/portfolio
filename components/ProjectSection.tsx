@@ -44,7 +44,10 @@ const projects: Array<Project> = [
 ];
 function ProjectSection() {
   return (
-    <section className="min-h-full h-fit pb-[300px] relative">
+    <section
+      className="min-h-full h-fit pb-16 lg:pb-[300px] relative overflow-hidden"
+      id="projects"
+    >
       <div className=" -z-10 absolute top-0 right-0  translate-x-1/2 border-2 rounded-full border-black p-2 ">
         <div className="w-[150px] h-[150px] rounded-full bg-[#7DF9FF]"></div>
       </div>
@@ -52,7 +55,7 @@ function ProjectSection() {
       <div className=" -z-10 absolute bottom-1/3 left-1/3  translate-x-1/2 border-2 rounded-full border-black p-2 ">
         <div className="w-[150px] h-[150px] rounded-full bg-[#7DF9FF]"></div>
       </div>
-      <div className="w-[80%] mx-auto pt-[54px] flex flex-col gap-4">
+      <div className="w-full px-4 lg:w-[80%] mx-auto lg:pt-[54px] flex flex-col gap-4">
         {projects.map(
           (
             {

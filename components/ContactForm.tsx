@@ -34,12 +34,15 @@ export const ContactUs = () => {
   };
 
   return (
-    <section className="bg-red-300 flex flex-col justify-center items-center">
+    <section
+      className="bg-red-300 flex flex-col justify-center items-center"
+      id="contact"
+    >
       <h1 className="mb-4 text-2xl">Say hello!</h1>
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col w-[400px] p-4  bg-white border"
+        className="flex flex-col w-[80%] lg:w-[400px] p-4  bg-white border"
       >
         <label className="mt-4">Name</label>
         <input

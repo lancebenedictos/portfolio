@@ -6,15 +6,18 @@ import HeroBottom from "./HeroBottom";
 
 function Hero() {
   return (
-    <header className=" h-screen w-full bg-[#FCFD96] relative flex flex-col">
-      <div className="w-full lg:w-[80%] mx-auto h-full grid grid-cols-2 content-center z-10 relative">
-        <div className="relative">
+    <header
+      className=" h-screen w-full bg-[#FCFD96] relative flex flex-col overflow-hidden "
+      id="hero"
+    >
+      <div className="px-4 w-full lg:w-[80%] mx-auto h-full flex flex-col items-center justify-center lg:grid lg:grid-cols-2 content-center z-10 relative gap-4 ">
+        <div className="relative ">
           <h3 className=" text-xl text-[#3300FF] font-semibold">
             Hello, I'm Lance
           </h3>
           <HeroText />
 
-          <div className="flex gap-2 mt-16">
+          <div className="flex gap-2 mt-16 justify-center">
             <a
               className="flex items-center gap-2"
               href="https://github.com/lancebenedictos"
@@ -47,14 +50,12 @@ function Hero() {
           </div>
         </div>
 
-        <div className="relative h-full">
+        <div className=" hidden md:block relative  lg:h-full">
           <div className=" border-4  w-fit rounded-full border-dashed border-[#3300FF] overflow-hidden">
             <img
               src="/me.jpeg"
-              // width={200}
-              height={450}
               alt="Lance Benedictos"
-              className="bg-white m-2 rounded-full w-[400px]"
+              className="bg-white m-2 rounded-full w-[200px] lg:w-[400px] "
             />
           </div>
 
@@ -69,7 +70,7 @@ function Hero() {
 
         <MouseIcon classes="absolute bottom-4 left-1/2 -translate-x-1/2" />
       </div>
-      <div className=" absolute top-0 right-0  translate-x-1/2 border-2 rounded-full border-black p-2 ">
+      <div className="absolute top-0 right-0  translate-x-1/2 border-2 rounded-full border-black p-2 ">
         <div className="w-[150px] h-[150px] rounded-full bg-[#7DF9FF]"></div>
       </div>
 

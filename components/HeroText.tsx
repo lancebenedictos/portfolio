@@ -5,7 +5,7 @@ import React from "react";
 
 const animations = {
   initial: {
-    x: -10,
+    x: 10,
     y: 10,
   },
   main: {
@@ -18,7 +18,7 @@ const animations = {
     },
   },
   first: {
-    x: -10,
+    x: 10,
     y: 10,
 
     transition: {
@@ -27,7 +27,7 @@ const animations = {
     },
   },
   second: {
-    x: -20,
+    x: 20,
     y: 20,
 
     transition: {
@@ -36,7 +36,7 @@ const animations = {
     },
   },
   third: {
-    x: -30,
+    x: 30,
     y: 30,
 
     transition: {
@@ -48,23 +48,23 @@ const animations = {
 
 function HeroText() {
   return (
-    <div className="relative w-full">
+    <div className="relative">
       <Image
         src="./code.svg"
         width={60}
         height={60}
         alt="computer icon"
-        className="absolute top-0 right-16 z rotate-45"
+        className="absolute -top-5 lg:top-0 right-16 z rotate-45"
       />
       <motion.h1
-        className="  text-6xl font-bold absolute text-[#00bdbd] select-none"
+        className="text-4xl  lg:text-6xl font-bold absolute text-[#00bdbd] select-none"
         initial={animations.initial}
         animate={animations.third}
       >
         Web Developer
       </motion.h1>
       <motion.h1
-        className="  text-6xl font-bold absolute text-[#01cccc] select-none"
+        className=" text-4xl lg:text-6xl font-bold absolute text-[#01cccc] select-none"
         initial={animations.initial}
         animate={animations.second}
       >
@@ -72,7 +72,7 @@ function HeroText() {
       </motion.h1>
 
       <motion.h1
-        className="  text-6xl font-bold absolute text-[#00e6e6] select-none"
+        className="text-4xl  lg:text-6xl font-bold absolute text-[#00e6e6] select-none"
         initial={animations.initial}
         animate={animations.first}
       >
@@ -80,7 +80,7 @@ function HeroText() {
       </motion.h1>
 
       <motion.h1
-        className="  text-6xl font-bold z-10 relative select-none"
+        className=" text-4xl lg:text-6xl font-bold z-10 relative select-none "
         initial={animations.initial}
         animate={animations.main}
       >

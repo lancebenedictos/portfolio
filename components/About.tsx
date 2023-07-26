@@ -4,8 +4,8 @@ import LevelIndicator from "./LevelIndicator";
 
 function About() {
   return (
-    <section className="bg-[#FF00F5] flex flex-col">
-      <div className="w-[80%] mx-auto text-[#FCFD96] grid grid-cols-2 gap-6 items-center flex-1">
+    <section className="bg-[#FF00F5] flex flex-col pb-16 lg:pb-0" id="about">
+      <div className="w-[80%] mx-auto text-[#FCFD96] flex flex-col lg:grid lg:grid-cols-2 gap-6 items-center flex-1">
         <div className="w-full flex flex-col gap-4">
           <span>
             <h2 className=" text-3xl">About me</h2>
@@ -24,7 +24,7 @@ function About() {
           </span>
         </div>
 
-        <div className="border w-full bg-[#FCFD96] rounded-lg text-[#FF00F5] p-4 relative overflow-visible">
+        <div className="border w-full bg-[#FCFD96] rounded-lg text-[#FF00F5] p-4 relative overflow-visible mt-16 md:mt-0">
           <Image
             src="./slug.svg"
             width={60}
