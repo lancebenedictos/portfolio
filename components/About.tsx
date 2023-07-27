@@ -6,13 +6,13 @@ import SkillsSection from "./SkillsSection";
 function About() {
   return (
     <section
-      className="bg-[#FF00F5] flex flex-col pb-16 lg:pb-0 overflow-hidden"
+      className="bg-[#FF00F5] flex flex-col pb-16 lg:pb-0 overflow-hidden  "
       id="about"
     >
-      <div className="w-[80%] mx-auto text-[#FCFD96] flex flex-col lg:grid lg:grid-cols-2 gap-6 items-center flex-1">
+      <div className="p-6 text-[#FCFD96] flex flex-col lg:grid lg:grid-cols-2 gap-6 items-center flex-1 lg:w-[80%] max-w-6xl mx-auto">
         <div className="w-full flex flex-col gap-4">
           <span className="relative">
-            <h2 className="textShadow text-3xl relative">
+            <h2 className=" text-6xl relative stroke text-[#FF00F5] ">
               About me
               <Image
                 src="/glasses.svg"

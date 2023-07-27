@@ -76,7 +76,7 @@ function Project({
           whileInView="expand"
           href={projectUrl}
           target="_blank"
-          className="relative w-fit"
+          className="relative w-fit "
           viewport={{ once: true }}
         >
           <motion.div
@@ -94,7 +94,7 @@ function Project({
           <img
             src={projectImgSrc}
             alt="blog website screenshot"
-            className=" border rounded-lg w-full max-w-[500px]"
+            className=" border rounded-lg w-full max-w-[500px] hover:scale-110 transition-all"
           />
         </motion.a>
       </div>
