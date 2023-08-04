@@ -12,7 +12,7 @@ function About() {
       <div className="p-6 text-[#FCFD96] flex flex-col lg:grid lg:grid-cols-2 gap-6 items-center flex-1 lg:w-[80%] max-w-6xl mx-auto">
         <div className="w-full flex flex-col gap-4">
           <span className="relative">
-            <h2 className=" text-6xl relative stroke text-[#FF00F5] ">
+            <h2 className=" text-6xl relative   ">
               About me
               <Image
                 src="/glasses.svg"

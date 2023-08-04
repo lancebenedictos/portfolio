@@ -86,3 +86,8 @@ textPath {
   text-shadow: -1px -1px 0 #fcfd96, 1px -1px 0 #fcfd96, -1px 1px 0 #fcfd96,
     1px 1px 0 #fcfd96;
 }
+
+.textOverflow {
+  line-clamp: 1;
+  text-overflow: clip;
+}
