@@ -32,7 +32,7 @@ const projects: Array<Project> = [
     tech: "TailwindCSS, NextJS, Framer Motion",
     projectImgSrc: "/blog.png",
     projectUrl: "https://film-blog-iota.vercel.app/",
-    title: "01. Film blog",
+    title: "02. Film blog",
     githubUrl: "https://github.com/lancebenedictos/film-blog",
   },
   {
@@ -41,7 +41,7 @@ const projects: Array<Project> = [
     projectImgSrc: "/sneaker.png",
     projectUrl: "https://elev.vercel.app/",
     reverse: true,
-    title: "02. Sneaker store",
+    title: "03. Sneaker store",
     githubUrl: "https://github.com/lancebenedictos/elev",
   },
   {
@@ -49,7 +49,7 @@ const projects: Array<Project> = [
     tech: "TailwindCSS, NextJS, Framer Motion, Grafbase",
     projectImgSrc: "/flexxible.png",
     projectUrl: "https://flexibble-wheat.vercel.app/",
-    title: "03. Dribbble clone",
+    title: "04. Dribbble clone",
     githubUrl: "https://github.com/lancebenedictos/flexibble",
   },
 ];
