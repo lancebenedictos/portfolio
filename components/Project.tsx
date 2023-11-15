@@ -10,8 +10,8 @@ type Props = {
   projectUrl: string;
   reverse?: boolean;
   title: string;
-
   githubUrl: string;
+  nodeUrl?: string;
 };
 
 const variants = {
@@ -32,6 +32,7 @@ function Project({
   reverse,
   title,
   githubUrl,
+  nodeUrl,
 }: Props) {
   return (
     <motion.div
@@ -67,6 +68,20 @@ function Project({
             >
               <Image src="/live.svg" width={30} height={30} alt="live site" />
             </a>
+            {nodeUrl ? (
+              <a
+                href={nodeUrl}
+                target="_blank"
+                className="hover:rotate-6 transition-all"
+              >
+                <Image
+                  src="/node.svg"
+                  width={30}
+                  height={30}
+                  alt="github url"
+                />
+              </a>
+            ) : null}
           </div>
         </div>
       </div>

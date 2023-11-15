@@ -3,6 +3,7 @@ import Camera from "./Camera";
 import Project from "./Project";
 import Sneaker from "./Sneaker";
 import Computer from "./Computer";
+import Calendar from "./Calendar";
 
 type Project = {
   svg: React.ReactNode;
@@ -11,11 +12,21 @@ type Project = {
   projectUrl: string;
   reverse?: boolean;
   title: string;
-
   githubUrl: string;
+  nodeUrl?: string;
 };
 
 const projects: Array<Project> = [
+  {
+    svg: <Calendar />,
+    tech: "TailwindCSS, ReactJS, NodeJS, Express, AWS S3, AWS Rekognition",
+    projectImgSrc: "/eventsnap.png",
+    projectUrl: "https://eventsnap.vercel.app/",
+    title: "01. Event management app",
+    githubUrl: "https://github.com/lancebenedictos/eventsnap",
+    reverse: true,
+    nodeUrl: "https://github.com/lancebenedictos/EventSnapServer",
+  },
   {
     svg: <Camera />,
     tech: "TailwindCSS, NextJS, Framer Motion",
@@ -65,8 +76,8 @@ function ProjectSection() {
               projectUrl,
               title,
               reverse,
-
               githubUrl,
+              nodeUrl,
             }: Project,
             index
           ) => (
@@ -79,6 +90,7 @@ function ProjectSection() {
               key={index}
               reverse={reverse}
               githubUrl={githubUrl}
+              nodeUrl={nodeUrl}
             />
           )
         )}
